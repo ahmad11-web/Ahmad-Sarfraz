@@ -1,0 +1,125 @@
+/* Page styling */
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:20px;
+display:flex;
+justify-content:center;
+}
+
+/* Form Card Layout */
+.container{
+max-width:700px;
+width:100%;
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* Fieldset */
+fieldset{
+border:1px solid #ccc;
+margin-bottom:20px;
+padding:20px;
+border-radius:6px;
+}
+
+/* Legend */
+legend{
+font-weight:bold;
+padding:0 10px;
+}
+
+/* Labels */
+label{
+display:block;
+margin-top:12px;
+font-weight:600;
+}
+
+/* Inputs */
+input,
+select,
+textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:4px;
+box-sizing:border-box;
+}
+
+/* Radio buttons */
+.radio-group{
+display:flex;
+gap:15px;
+margin-top:5px;
+}
+
+/* Buttons */
+.buttons{
+margin-top:20px;
+display:flex;
+gap:10px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button[type="submit"]{
+background:#60738b;
+color:white;
+}
+
+button[type="reset"]{
+background:#0088ff;
+color:white;
+}
+
+/* Focus Styles */
+input:focus,
+select:focus,
+textarea:focus{
+outline:none;
+border-color:#2c7be5;
+box-shadow:0 0 5px rgba(44,123,229,0.5);
+}
+
+/* Validation Styles */
+input:required:invalid{
+border-color:red;
+}
+
+input:required:valid{
+border-color:rgb(4, 239, 4);
+}
+
+/* Responsive Design */
+@media (max-width:600px){
+
+.container{
+padding:20px;
+}
+
+.radio-group{
+flex-direction:column;
+}
+
+.buttons{
+flex-direction:column;
+}
+
+}

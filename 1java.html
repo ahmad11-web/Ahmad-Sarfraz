@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice Questions</title>
+</head>
+<body>
+    <h1>JavaScript Practice Solutions</h1>
+    <p>Basic JavaScript Lecture Use External JavaScript Example</p>
+    <h1>Ahmad Sarfraz and Sheraz Khan</h1>
+
+    <script>
+        
+        console.log("--- Section A: Basic ---");
+        alert('Welcome to JavaScript');
+        let name = "Ahmad";
+        let age = 22;
+        let city = "Karachi";
+        console.log("Name:", name, "| Age:", age, "| City:", city);
+        let numA = 15;
+        let numB = 25;
+        let sum = numA + numB;
+        console.log("Sum of", numA, "and", numB, "is:", sum);
+       
+        console.log("\n--- Section B: Conditions ---");
+
+        let checkNumber = 7;
+        if (checkNumber % 2 === 0) {
+            console.log(checkNumber + " is an Even number.");
+        } else {
+            console.log(checkNumber + " is an Odd number.");
+        }
+
+        let studentMarks = 65;
+        if (studentMarks >= 50) {
+            console.log("Student with " + studentMarks + " marks has Passed.");
+        } else {
+            console.log("Student with " + studentMarks + " marks has Failed.");
+        }
+
+        let personAge = 17;
+        if (personAge >= 18) {
+            console.log("Age is " + personAge + ": Eligible to vote.");
+        } else {
+            console.log("Age is " + personAge + ": Not eligible to vote.");
+        }
+
+        console.log("\n--- Section C: Loops ---");
+
+        console.log("Numbers from 1 to 10:");
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        console.log("Even numbers from 1 to 20:");
+        for (let i = 2; i <= 20; i += 2) {
+            console.log(i);
+        }
+
+        console.log("Multiplication Table of 5:");
+        for (let i = 1; i <= 10; i++) {
+            console.log("5 x " + i + " = " + (5 * i));
+        }
+
+        console.log("\n--- Section D: Functions ---");
+
+        function addTwoNumbers(a, b) {
+            return a + b;
+        }
+        console.log("Result of addTwoNumbers(10, 30):", addTwoNumbers(10, 30));
+
+        function getSquare(number) {
+            return number * number;
+        }
+        console.log("Square of 6 is:", getSquare(6));
+
+    </script>
+</body>
+</html>

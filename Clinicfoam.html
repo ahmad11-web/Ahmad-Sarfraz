@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinic Appointment Portal</title>
+
+<!-- Linking CSS File -->
+<link rel="stylesheet" href="Clinicfoam.css">
+</head>
+
+<body>
+
+<div class="container">
+<h2>Ahmad and Sheraz</h2>
+<h1>Online Clinic Appointment Form</h1>
+
+<!-- Appointment Form -->
+<form action="#" method="post">
+
+<!-- Personal Information -->
+<fieldset>
+<legend>Personal Information</legend>
+
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="fullname" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="phone">Phone</label>
+<input type="tel" id="phone" name="phone" required>
+
+<label for="cnic">CNIC</label>
+<input type="text" id="cnic" name="cnic" minlength="13" maxlength="15" placeholder="12345-1234567-1">
+
+<label for="password">Create Password</label>
+<input type="password" id="password" name="password" required>
+
+<label>Gender</label>
+<div class="radio-group">
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+</div>
+
+</fieldset>
+
+
+<!-- Appointment Information -->
+<fieldset>
+<legend>Appointment Information</legend>
+
+<label for="department">Department</label>
+<select id="department" name="department">
+
+<optgroup label="Medical">
+<option>General Medicine</option>
+<option>Cardiology</option>
+<option>Dermatology</option>
+</optgroup>
+
+<optgroup label="Surgical">
+<option>Orthopedics</option>
+<option>Neurology</option>
+</optgroup>
+
+</select>
+
+
+<label for="doctor">Preferred Doctor</label>
+<input list="doctors" id="doctor" name="doctor">
+
+<datalist id="doctors">
+<option value="Dr. Ahmed Khan">
+<option value="Dr. Sarah Ali">
+<option value="Dr. John Smith">
+<option value="Dr. Fatima Noor">
+</datalist>
+
+
+<!-- DATE PICKER -->
+<label for="date">Appointment Date</label>
+<input type="date" id="date" name="date" required>
+
+
+<label for="time">Appointment Time</label>
+<input type="time" id="time" name="time">
+
+
+<label for="urgency">Urgency Level (1-10)</label>
+<input type="range" id="urgency" name="urgency" min="1" max="10">
+
+
+<label for="report">Upload Previous Report</label>
+<input type="file" id="report" name="report" accept=".pdf,image/*">
+
+
+<label for="symptoms">Symptoms / Notes</label>
+<textarea id="symptoms" name="symptoms" rows="4"></textarea>
+
+</fieldset>
+
+
+<!-- Consent Section -->
+<fieldset>
+<legend>Consent</legend>
+
+<input type="checkbox" id="consent" name="consent" required>
+<label for="consent">I agree to the clinic policy</label>
+
+</fieldset>
+
+
+<!-- Buttons -->
+<div class="buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
